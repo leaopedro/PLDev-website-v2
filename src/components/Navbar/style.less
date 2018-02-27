@@ -1,0 +1,87 @@
+.navbar{
+    transition: all 0.5s ease;
+    &.navbar-default{
+        background: #474747;
+        /* For IE 5.5 - 7*/
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+        /* For IE 8*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+        text-shadow: 0px 2px 3px #555;
+        border: none;
+        box-shadow: 0 0 10px #000;
+        .navbar-nav {
+            li>a{
+                color: azure !important;
+                text-shadow: 0px 2px 3px #555;
+                &:hover{
+                    color: gainsboro !important;
+                    text-shadow: 0px 2px 4px #555;
+                }
+            }
+        }
+    }
+    .navbar-toggle {
+        border: none;
+        margin: 0px;
+        height: 50px;
+        width: 50px;
+        border-radius: 0px;
+        &:focus, &:hover {
+            background-color: gainsboro;
+        }
+    }
+    #bar-list {
+        font-size: 18px;
+        li {
+            padding: 3px 25px;
+            -webkit-transition: all .7s ease;
+            -moz-transition: all .7s ease;
+            -o-transition: all .7s ease;
+            -ms-transition: all .7s ease;
+            transition: all .7s ease;
+        }
+    }
+    &.nav-transparent{
+        background: none;
+        border: none;
+        box-shadow: 0 0 0px;
+        .navbar-nav>li>a:hover{
+            color: gainsboro !important;
+        }
+        #bar-list>li{
+            padding: 30px 25px;
+
+        }
+    }
+    .navbar-brand {
+        padding: 5px 35px 5px 50px;
+        .navbar-logo {
+            max-width: 43px;
+            -webkit-transition: all .7s ease;
+            -moz-transition: all .7s ease;
+            -o-transition: all .7s ease;
+            -ms-transition: all .7s ease;
+            transition: all .7s ease;
+        }
+    }
+    ul li i {
+        margin-right: 4px;
+    }
+    @media (max-width: 768px) {
+        #bar-list li{
+            padding: 5px 0px;
+        }
+        .navbar-default .navbar-collapse{
+            border:none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &.nav-transparent .navbar-header .navbar-brand img.navbar-logo{
+            position: absolute;
+            top: 15px;
+            left: 40px;
+            max-width: 80px;
+        }
+    }
+}
