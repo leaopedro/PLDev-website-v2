@@ -14,14 +14,13 @@ class FirstSection extends React.Component {
   render() {
     const style = {
       backgroundImage: `url(${this.props.homeBg})`
-    }
+    };
     return (
       <section className="home dinamic-bg" style={style}>
         <div className="main-content-container">
-          <div className="frame">
-            <h1>Pedro Leão</h1>
-            <h2>Web UI Engineer</h2>
-          </div>
+          <h1>Hi! I'm Pedro Leão,</h1>
+          <h2>a web engineer and</h2>
+          <h3>visual designer.</h3>
         </div>
       </section>
     );

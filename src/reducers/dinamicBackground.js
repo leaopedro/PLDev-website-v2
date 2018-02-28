@@ -3,11 +3,11 @@ import { CHOOSE_IMAGES } from '../actions';
 
 const homeImages = [];
 const secondaryImages = [];
-for(let i = 1; i<19; i++){
-  if (i<14) {
-    secondaryImages[i] = {path: "img/bg"+i+".jpg"};
+for(let i = 1; i<14; i++){
+  if (i<9) {
+    homeImages[i] = {path: "img/home"+i+".jpg"};
   }
-  homeImages[i] = {path: "img/home"+i+".jpg"};
+  secondaryImages[i] = {path: "img/bg"+i+".jpg"};
 }
 
 const defaultState = {
